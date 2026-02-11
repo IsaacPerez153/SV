@@ -1,0 +1,92 @@
+body{
+margin:0;
+font-family:Georgia, serif;
+background:radial-gradient(circle,#1b3c59,#0f2027);
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#e3f2fd;
+}
+
+/* CARTA */
+.carta{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:15px;
+backdrop-filter:blur(12px);
+text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+animation:fadeIn 2s;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+margin-top:20px;
+}
+
+#btnContinuar{background:#1e88e5;color:white;}
+
+.final{
+position:absolute;
+text-align:center;
+animation:fadeIn 2s;
+}
+
+.oculto{display:none;}
+
+/* RAMO */
+.ramo{
+width:320px;
+margin:0 auto 20px;
+animation:aparecerRamo 2s ease-out;
+}
+
+@keyframes aparecerRamo{
+0%{opacity:0;transform:scale(0.6) translateY(40px);}
+100%{opacity:1;transform:scale(1) translateY(0);}
+}
+
+.tulipan{
+animation:flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar{
+0%{transform:translateY(0);}
+50%{transform:translateY(-5px);}
+100%{transform:translateY(0);}
+}
+
+
+/* BOTONES */
+.si{background:#1e88e5;color:white;}
+.no{
+background:#455a64;
+color:white;
+position:absolute;
+}
+
+/* CORAZONES */
+.corazones span{
+position:absolute;
+color:#90caf9;
+animation:caer linear infinite;
+}
+
+@keyframes caer{
+from{transform:translateY(-10vh);}
+to{transform:translateY(110vh);}
+}
+
+#textoCarta{
+    white-space: pre-line;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Mi Amor 💙</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="musica" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="corazones"></div>
+
+<!-- CARTA -->
+<div class="carta" id="carta">
+<h1>Para ti, amorcito preciosa 💙</h1>
+<p id="textoCarta"></p>
+<button id="btnContinuar">Abrir mi corazón 💌</button>
+</div>
+
+<!-- FINAL -->
+<div class="final oculto" id="final">
+
+<div class="ramo">
+
+<svg viewBox="0 0 320 360">
+
+<!-- ENVOLTURA -->
+<ellipse cx="160" cy="260" rx="120" ry="70" fill="#f8bbd0" opacity="0.35"/>
+<ellipse cx="160" cy="250" rx="140" ry="80" fill="#fce4ec" opacity="0.45"/>
+
+<!-- HOJAS -->
+<ellipse cx="160" cy="250" rx="90" ry="50" fill="#1b5e20" opacity="0.2"/>
+
+<!-- TALLOS -->
+<g stroke="#2e7d32" stroke-width="4" fill="none">
+<path d="M130 330 C130 250,120 200,130 150"/>
+<path d="M150 330 C150 250,140 200,150 150"/>
+<path d="M170 330 C170 250,180 200,170 150"/>
+<path d="M110 330 C110 260,105 210,110 170"/>
+<path d="M190 330 C190 260,195 210,190 170"/>
+</g>
+
+<!-- MUCHOS TULIPANES -->
+<g class="tulipan"><ellipse cx="160" cy="150" rx="22" ry="30" fill="#ff5a7a"/></g>
+<g class="tulipan"><ellipse cx="140" cy="165" rx="22" ry="30" fill="#ff6b88"/></g>
+<g class="tulipan"><ellipse cx="180" cy="165" rx="22" ry="30" fill="#ff6b88"/></g>
+<g class="tulipan"><ellipse cx="125" cy="180" rx="20" ry="28" fill="#ff8fa3"/></g>
+<g class="tulipan"><ellipse cx="195" cy="180" rx="20" ry="28" fill="#ff8fa3"/></g>
+<g class="tulipan"><ellipse cx="150" cy="135" rx="18" ry="25" fill="#ffc1cc"/></g>
+<g class="tulipan"><ellipse cx="170" cy="135" rx="18" ry="25" fill="#ffd6de"/></g>
+<g class="tulipan"><ellipse cx="135" cy="145" rx="18" ry="25" fill="#ff9db2"/></g>
+<g class="tulipan"><ellipse cx="185" cy="145" rx="18" ry="25" fill="#ff9db2"/></g>
+
+</svg>
+
+</div>
+
+
+<h2>¿QUIERES SER MI SAN VALENTÍN UN AÑO MÁS?</h2>
+
+<div class="botones">
+<button class="si" onclick="respuestaSi()">SI 💙</button>
+<button class="no" id="btnNo">NO 😢</button>
+</div>
+
+<div id="mensajeFinal"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
